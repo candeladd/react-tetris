@@ -3,6 +3,43 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+   /* Border Colors are all transparent colors. These will tint or shade the background color of the square. */
+   --border-left-color: rgba(255, 255, 255, 0.20);
+   --border-top-color: rgba(255, 255, 255, 0.33);
+   --border-right-color: rgba(0, 0, 0, 0.15);
+   --border-bottom-color: rgba(0, 0, 0, 0.5);
+
+   /* Color Palette */
+  --color-green: #00b48d;
+  --color-blue: #0070f3;
+  --color-red: #e00;
+  --color-yellow: #f5a623;
+  --color-purple: #7928ca;
+  --color-pink: #e81a4d;
+  --color-orange: #f97316;
+  --color-cyan: #79ffe1;
+  --color-teal: #64ffda;
+  --color-violet: #8b5cf6;
+  --color-indigo: #4f46e5;
+  --color-gray: #eaeaea;
+  --color-gray-light: #f7f7f7;
+  --color-gray-lighter: #f0f0f0;
+  --color-gray-darker: #000000;
+  --color-gray-darkest: #000000;
+  --color-gray-dark: #171717;
+
+  /* Button Colors */
+  --button-color-t: rgba(200, 200, 200, 1);
+  --button-color-r: rgba(150, 150, 150, 1);
+  --button-color-b: rgba(120, 120, 120, 1);
+  --button-color-l: rgba(222, 222, 222, 1);
+
+  /* Numbers define values that will be used throughout the CSS.
+  --tile-size: 20px for example will set size of the grid squares. */
+  --cols: 10;
+  --rows: 18;
+  --tile-size: 20px;
+  --border-width: 5px;
 }
 
 @theme inline {
@@ -17,6 +54,15 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+}
+
+.app-header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: var(--foreground);
 }
 
 body {

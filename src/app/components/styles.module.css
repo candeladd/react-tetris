@@ -1,0 +1,50 @@
+
+.some-class {
+  color: var(--color-blue);
+  font-size: 24vh;
+}
+
+.color-0 {
+  background: var(--color-green);
+}
+.color-1 {
+  color: var(--color-blue);
+}
+.color-2 {
+  color: var(--color-red);
+}
+.color-3 {
+  color: var(--color-yellow);
+}
+.color-4 {
+  color: var(--color-purple);
+}
+.color-5 {
+  color: var(--color-pink);
+}
+.color-6 {
+  color: var(--color-orange);
+}
+.color-7 {
+  color: var(--color-cyan);
+}
+.color-8 {
+  color: var(--color-teal);
+}
+.color-9 {
+  color: var(--color-violet);
+}
+.color-10 {
+  color: var(--color-indigo);
+}
+
+.grid-square {
+  border: solid;
+  width: var(--tile-size);
+  height: var(--tile-size);
+  border-width: var(--border-width);
+  border-left-color: var(--border-top-color);
+  border-top-color: var(--border-top-color);
+  border-right-color: var(--border-right-color);
+  border-bottom-color: var(--border-bottom-color);
+}
