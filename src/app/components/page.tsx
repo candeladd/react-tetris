@@ -7,7 +7,7 @@ export default function Page() {
   console.log('classes ', classes);
   return (
     <div>
-    <h1 className={classes}>Hello Next.js!</h1>
+    <h1 className={classes}>Tetris React!</h1>
     <GridBoard />
     </div>
   )

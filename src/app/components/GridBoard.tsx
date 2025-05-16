@@ -1,25 +1,20 @@
 import "../globals.css";
 import Square from "./square";
+import styles from "./styles.module.css";
 
 export default function GridBoard() {
-  const boardArray: number[][] = []
-  for(let i =0; i< 18 ; i++){
-    const rowArray: number[] = []
-    for(let j=0; j< 10; j++){
-      rowArray.push(Math.floor(Math.random() * 11))
+  const boardArray: React.ReactNode[][] = []
+  for(let row =0; row< 18 ; row++){
+    const rowArray: React.ReactNode[] = []
+    for(let col=0; col< 10; col++){
+      rowArray.push(<Square key={`${row}${col}`} color={Math.floor(Math.random() * 8)}/>)
     }
     boardArray.push(rowArray)
   }
+  const gridClass = styles['grid-board']
   return (
-    <div>
-      { boardArray.map((row, rowIndex) => (
-        <div key={rowIndex} className="grid grid-cols-10 ">
-          {row.map((square, colIndex) => (
-            <Square key={colIndex} color={boardArray[rowIndex][colIndex]} />
-            
-          ))}
-        </div>
-      ))}
+    <div className={gridClass}>
+      { boardArray}
     </div>
   )
 }
