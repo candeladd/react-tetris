@@ -24,10 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <div className="app-header">Tetris React</div>
+      <body>
         {children}
       </body>
     </html>
